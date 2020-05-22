@@ -132,7 +132,7 @@ Partial Class peticioServei
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.BackgroundImage = Global.CatMANAGER.My.Resources.Resources.logoresolution400
+        Me.BackgroundImage = Global.Resolution.My.Resources.Resources.logoresolution400
         Me.ClientSize = New System.Drawing.Size(449, 406)
         Me.Controls.Add(Me.Label6)
         Me.Controls.Add(Me.cmbDept2)

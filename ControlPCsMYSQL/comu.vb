@@ -20,7 +20,7 @@ Module comu
     '     'resoltes i sense resoldre per odre de data i hora
     '     Try
     '         conSQL = conectarSQLSERVER()
-    '         Dim consulta As String = "SELECT id_incidencia, id_pc, data, problema FROM [CATMANAGER].[dbo].[incidencies] ORDER BY data DESC, hora DESC "
+    '         Dim consulta As String = "SELECT id_incidencia, id_pc, data, problema FROM [dbo].[incidencies] ORDER BY data DESC, hora DESC "
     '         Dim myCommand As New SqlCommand(consulta, conSQL)
     '         Dim lectura As SqlDataReader = myCommand.ExecuteReader()
     '         'Dim n As Integer = 1
@@ -413,7 +413,7 @@ Module comu
         Try
             'obter un llistat d'usuaris Administrador
             conSQL = conectarSQLSERVER()
-            Dim consulta As String = "SELECT usr FROM usuaris ORDER BY usr "
+            Dim consulta As String = "SELECT usr FROM usuaris order by usr "
             Dim myCommand As New SqlCommand(consulta, conSQL)
             Dim lectura As SqlDataReader = myCommand.ExecuteReader()
             'Dim fila As String() = New String() {"", ""}
@@ -483,15 +483,17 @@ Module comu
             'Verificador de que l'usuari X es administrador 
             'ja que els administradors solament estan en aquesta taula usuaris
             conSQL = conectarSQLSERVER()
-            Dim consulta As String = "SELECT usr FROM usuaris WHERE usr='" + usr + "' "
+            Dim consulta As String = "SELECT usr FROM usuaris WHERE admin =1 "
             Dim myCommand As New SqlCommand(consulta, conSQL)
             'Dim fila As String() = New String() {"", ""}
+
             Dim reg As String = myCommand.ExecuteScalar
-            If (reg = usr) Then
-                Return True
-            Else
-                Return False
-            End If
+                If (reg = usr) Then
+                    Return True
+                Else
+                    Return False
+                End If
+
         Catch ex As SqlException
             MsgBox("Error " & ex.Message)
             Return False
@@ -914,7 +916,7 @@ solucio, id_prioritat, estat, darrera_ullada, darrera_ullada_hora, id_cat, id_es
             enviat.EnableSsl = True
 
             enviat.Send(correos)
-            MsgBox("El mensaje fue enviado correctamente. ", MsgBoxStyle.Information, "Mensaje")
+            MsgBox("El missatge va ser enviat correctament.", MsgBoxStyle.Information, "Mensaje")
 
         Catch ex As Exception
             MessageBox.Show(ex.Message, "Mensajeria 1.0 vb.net ®", MessageBoxButtons.OK, MessageBoxIcon.Error)

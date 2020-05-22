@@ -25,8 +25,8 @@ Partial Class Informes
         Me.components = New System.ComponentModel.Container()
         Dim ReportDataSource2 As Microsoft.Reporting.WinForms.ReportDataSource = New Microsoft.Reporting.WinForms.ReportDataSource()
         Me.incidenciesBindingSource = New System.Windows.Forms.BindingSource(Me.components)
-        Me.ResolutionDataSet = New CatMANAGER.resolutionDataSet()
-        Me.incidenciesTableAdapter = New CatMANAGER.resolutionDataSetTableAdapters.incidenciesTableAdapter()
+        Me.ResolutionDataSet = New Resolution.resolutionDataSet()
+        Me.incidenciesTableAdapter = New Resolution.resolutionDataSetTableAdapters.incidenciesTableAdapter()
         Me.ReportViewer1 = New Microsoft.Reporting.WinForms.ReportViewer()
         Me.Label1 = New System.Windows.Forms.Label()
         CType(Me.incidenciesBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -52,7 +52,7 @@ Partial Class Informes
         ReportDataSource2.Name = "inform1Resolution"
         ReportDataSource2.Value = Me.incidenciesBindingSource
         Me.ReportViewer1.LocalReport.DataSources.Add(ReportDataSource2)
-        Me.ReportViewer1.LocalReport.ReportEmbeddedResource = "CatMANAGER.informe1.rdlc"
+        Me.ReportViewer1.LocalReport.ReportEmbeddedResource = "Resolution.informe1.rdlc"
         Me.ReportViewer1.Location = New System.Drawing.Point(12, 55)
         Me.ReportViewer1.Name = "ReportViewer1"
         Me.ReportViewer1.ServerReport.BearerToken = Nothing

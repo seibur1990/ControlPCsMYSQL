@@ -55,26 +55,28 @@ Partial Class frmPrincipal
         'NovaIncidènciaToolStripMenuItem
         '
         Me.NovaIncidènciaToolStripMenuItem.Name = "NovaIncidènciaToolStripMenuItem"
-        Me.NovaIncidènciaToolStripMenuItem.Size = New System.Drawing.Size(161, 22)
+        Me.NovaIncidènciaToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
         Me.NovaIncidènciaToolStripMenuItem.Text = "Nova incidència"
         '
         'EstatIncidènciesToolStripMenuItem
         '
         Me.EstatIncidènciesToolStripMenuItem.Name = "EstatIncidènciesToolStripMenuItem"
-        Me.EstatIncidènciesToolStripMenuItem.Size = New System.Drawing.Size(161, 22)
+        Me.EstatIncidènciesToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
         Me.EstatIncidènciesToolStripMenuItem.Text = "Estat incidències"
+        Me.EstatIncidènciesToolStripMenuItem.Visible = False
         '
         'PeticióServeiToolStripMenuItem
         '
         Me.PeticióServeiToolStripMenuItem.Name = "PeticióServeiToolStripMenuItem"
-        Me.PeticióServeiToolStripMenuItem.Size = New System.Drawing.Size(161, 22)
+        Me.PeticióServeiToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
         Me.PeticióServeiToolStripMenuItem.Text = "Petició servei"
         '
         'EstatPeticionsToolStripMenuItem
         '
         Me.EstatPeticionsToolStripMenuItem.Name = "EstatPeticionsToolStripMenuItem"
-        Me.EstatPeticionsToolStripMenuItem.Size = New System.Drawing.Size(161, 22)
+        Me.EstatPeticionsToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
         Me.EstatPeticionsToolStripMenuItem.Text = "Estat peticions"
+        Me.EstatPeticionsToolStripMenuItem.Visible = False
         '
         'AdministracióToolStripMenuItem
         '

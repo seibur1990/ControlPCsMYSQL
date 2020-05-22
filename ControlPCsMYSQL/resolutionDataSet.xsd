@@ -4,7 +4,7 @@
     <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
       <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
         <Connections>
-          <Connection AppSettingsObjectName="MySettings" AppSettingsPropertyName="CATMANAGERConnectionString3" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="CATMANAGERConnectionString3 (MySettings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.CatMANAGER.My.MySettings.GlobalReference.Default.CATMANAGERConnectionString3" Provider="System.Data.SqlClient" />
+          <Connection AppSettingsObjectName="MySettings" AppSettingsPropertyName="CATMANAGERConnectionString3" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="CATMANAGERConnectionString3 (MySettings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.Resolution.My.MySettings.GlobalReference.Default.CATMANAGERConnectionString3" Provider="System.Data.SqlClient" />
         </Connections>
         <Tables>
           <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="incidenciesTableAdapter" GeneratorDataComponentClassName="incidenciesTableAdapter" Name="incidencies" UserDataComponentName="incidenciesTableAdapter">
@@ -65,7 +65,7 @@
   <xs:element name="resolutionDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="resolutionDataSet" msprop:Generator_UserDSName="resolutionDataSet">
     <xs:complexType>
       <xs:choice minOccurs="0" maxOccurs="unbounded">
-        <xs:element name="incidencies" msprop:Generator_TableClassName="incidenciesDataTable" msprop:Generator_TableVarName="tableincidencies" msprop:Generator_TablePropName="incidencies" msprop:Generator_RowDeletingName="incidenciesRowDeleting" msprop:Generator_RowChangingName="incidenciesRowChanging" msprop:Generator_RowEvHandlerName="incidenciesRowChangeEventHandler" msprop:Generator_RowDeletedName="incidenciesRowDeleted" msprop:Generator_UserTableName="incidencies" msprop:Generator_RowChangedName="incidenciesRowChanged" msprop:Generator_RowEvArgName="incidenciesRowChangeEvent" msprop:Generator_RowClassName="incidenciesRow">
+        <xs:element name="incidencies" msprop:Generator_TableClassName="incidenciesDataTable" msprop:Generator_TableVarName="tableincidencies" msprop:Generator_RowChangedName="incidenciesRowChanged" msprop:Generator_TablePropName="incidencies" msprop:Generator_RowDeletingName="incidenciesRowDeleting" msprop:Generator_RowChangingName="incidenciesRowChanging" msprop:Generator_RowEvHandlerName="incidenciesRowChangeEventHandler" msprop:Generator_RowDeletedName="incidenciesRowDeleted" msprop:Generator_RowClassName="incidenciesRow" msprop:Generator_UserTableName="incidencies" msprop:Generator_RowEvArgName="incidenciesRowChangeEvent">
           <xs:complexType>
             <xs:sequence>
               <xs:element name="id_incidencia" msprop:Generator_ColumnVarNameInTable="columnid_incidencia" msprop:Generator_ColumnPropNameInRow="id_incidencia" msprop:Generator_ColumnPropNameInTable="id_incidenciaColumn" msprop:Generator_UserColumnName="id_incidencia" type="xs:double" />

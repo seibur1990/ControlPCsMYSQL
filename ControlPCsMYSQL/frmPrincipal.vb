@@ -31,8 +31,15 @@ Public Class frmPrincipal
     End Sub
 
     Private Sub MantenimentUsuarisToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles MantenimentUsuarisToolStripMenuItem.Click
-        frmUsuarisUPDATE.MdiParent = Me
-        frmUsuarisUPDATE.Show()
+        If (comu.verifica_usrAdmin(frmIdentificar.usuari) = True) Then
+            frmUsuarisUPDATE.MdiParent = Me
+            frmUsuarisUPDATE.Show()
+        ElseIf (comu.verifica_usrAdmin(frmIdentificar.usuari) = False) Then
+            frmUsuarisUPDATE.MdiParent = Me
+            frmUsuarisUPDATE.Hide()
+        End If
+
+
     End Sub
 
     Private Sub AltaNouUsuariToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles AltaNouUsuariToolStripMenuItem.Click
@@ -43,12 +50,15 @@ Public Class frmPrincipal
     Private Sub frmPrincipal_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         If (comu.verifica_usrAdmin(frmIdentificar.usuari) = True) Then
             AdministracióToolStripMenuItem.Visible = True
+            EstatPeticionsToolStripMenuItem.Visible = True
+            EstatIncidènciesToolStripMenuItem.Visible = True
         End If
     End Sub
 
     Private Sub EstatIncidènciesToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles EstatIncidènciesToolStripMenuItem.Click
         frmIncidencies.MdiParent = Me
         frmIncidencies.Show()
+
     End Sub
 
     Private Sub SobreLaplicacióToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles SobreLaplicacióToolStripMenuItem.Click
@@ -56,14 +66,15 @@ Public Class frmPrincipal
         frmSobre.Show()
     End Sub
 
-    Private Sub IncidènciesToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles IncidènciesToolStripMenuItem.Click
 
-    End Sub
 
     Private Sub PeticióServeiToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles PeticióServeiToolStripMenuItem.Click
+
         peticioServei.MdiParent = Me
         peticioServei.Show()
+
     End Sub
+
 
     Private Sub EstatPeticionsToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles EstatPeticionsToolStripMenuItem.Click
         frmPeticio.MdiParent = Me
