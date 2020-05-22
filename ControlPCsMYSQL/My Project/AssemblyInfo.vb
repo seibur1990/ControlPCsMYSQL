@@ -9,9 +9,9 @@ Imports System.Runtime.InteropServices
 ' Revisar los valores de los atributos del ensamblado
 
 <Assembly: AssemblyTitle("Resolution")>
-<Assembly: AssemblyDescription("Apliació per simplificar el control d'incidècies informàtiques")>
+<Assembly: AssemblyDescription("Apliació per simplificar el control d'incidècies i peticions informàtiques")>
 <Assembly: AssemblyCompany("Resolution S.A")>
-<Assembly: AssemblyProduct("Gestió incidències")>
+<Assembly: AssemblyProduct("Gestió incidències i peticions")>
 <Assembly: AssemblyCopyright("Copyright ©  2020")>
 <Assembly: AssemblyTrademark("")>
 
